@@ -1,0 +1,13 @@
+'''
+Input: Two arrays consisting of scores of two different people
+Output: Array containing their points earned after calculation.
+Calculation: Individula is awarded a point if their respective score exceeds the other person's score is the same category represented as array position
+def compareTriplets(a, b):
+    scoreA = 0
+    scoreB = 0
+    for i in range(3):
+        if a[i] > b[i]:
+            scoreA += 1
+        elif a[i] < b[i]:
+            scoreB += 1
+    return [scoreA, scoreB]
