@@ -1,0 +1,11 @@
+# Print a staircase of size  using # symbols and spaces. 
+def staircase(n):
+    count = 1
+    while count <= n:
+        for i in range(n - count):
+            print(" ", end='')
+        for i in range(count):
+            print('#', end='')
+        count += 1
+        if count <= n:
+            print()
